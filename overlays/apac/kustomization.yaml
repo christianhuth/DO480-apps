@@ -3,8 +3,11 @@ kind: Kustomization
 bases:
   - ../../base
 
+resources:
+  - route.yaml
+
 nameSuffix: "-apac"
 
 images:
   - name: mysql
-    newTag: 1-152
+    newTag: "1-152"
